@@ -9,6 +9,17 @@ var bodyParser = require('body-parser');
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.json());
 
+app.get('/',function(req,res)
+{
+ 
+ 
+   
+    console.log("get api call");
+	res.send("called api")
+
+
+});
+
 app.get('/contactList',function(req,res)
 {
  
